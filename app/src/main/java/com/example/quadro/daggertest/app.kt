@@ -37,6 +37,9 @@ abstract class InjectorModule {
 
 @Module
 class AppModule {
+
     @Provides
+    @Singleton
+    @Named("test")
     fun getString2() = "This is test2"
 }
